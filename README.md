@@ -49,25 +49,15 @@ Este patrón de Cloud asume que usted tiene una cuenta de **IBM Cloud**. Vaya al
   - [Python 3.8.2](https://www.python.org/downloads/release/python-382/)
   
 
-# Pasos
-0. [Descargue el conjunto de datos](#step-0-Download-the-data-set)
-1. [Clone el repositorio de código](#step-1-clone-the-repo)
-2. [Explore los datos](#step-2-explore-the-data-optional)
-3. [Cree los servicio en IBM Cloud](#step-3-create-ibm-cloud-services)
-4. [Cree y ejecute un experimento de AutoAI](#step-4-create-and-run-autoai-experiment)
-5. [Cree un deployment y pruebe su modelo](#step-5-create-a-deployment-and-test-your-model)
-6. [Cree un notebook desde su modelo](#step-6-create-a-notebook-from-your-model-optional)
-7. [Ejecute la aplicación](#step-7-run-the-application)
-
 ## Paso 0. Descargue el conjunto de datos  
 Utilizaremos un conjunto de datos de seguros de Kaggle. Puedes encontrarlo en (https://www.kaggle.com/noordeen/insurance-premium-prediction). Haga clic en el botón `Download`, y debería ver que descargará un archivo llamado `insurance-premium-prediction.zip`. Una vez descomprimido el archivo, debería ver `insurance.csv`.
 Este es el conjunto de datos que utilizaremos para el resto del ejemplo. Recuerde que este ejemplo es puramente didáctico y que puede utilizar cualquier conjunto de datos que desee. Puede utilizar cualquier conjunto de datos que desee; nosotros simplemente hemos elegido este.
 
 
-## Step 1. Clone the repo
-Clone this repo onto your computer in the destination of your choice:
+## Paso 1. Clone el repositorio de código
+Clone este repositorio de código en su computador en el destino de su elección:
 ```
-git clone https://github.com/IBM/predict-insurance-charges-with-ai
+git clone https://github.com/alejandrobohorquez96/predict-insurance-charges-with-autoai.git
 ```
 This gives you access to the notebooks in the `notebooks` directory. To explore the data before creating a model, 
 you can look at the [Claim Amount Exploratory](https://github.com/IBM/predict-insurance-charges-with-ai/blob/master/notebooks/Claim%20Amount%20Exploratory.ipynb) notebook, and create a [IBM Cloud Object Storage](https://cloud.ibm.com/catalog/services/cloud-object-storage) service, and paste your credentials in the notebook to run it. This step is purely optional.
