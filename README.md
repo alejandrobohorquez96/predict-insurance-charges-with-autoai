@@ -1,83 +1,50 @@
-# Create an application to predict your insurance premium cost with AutoAI 
+# Cree una aplicación para predecir el coste de la prima de su seguro con AutoAI 
 
-## Login/Sign-up to IBM Cloud:  http://ibm.biz/insuranceChargesUsingAutoAI 
+## Inicie Sesión/Registrese a IBM Cloud:  http://ibm.biz/insuranceChargesUsingAutoAI 
 
 
 ![finalDemo](https://user-images.githubusercontent.com/10428517/82013347-f7e71500-962e-11ea-9c28-2dec7d5b30cd.gif)
 
 
-As shown above, this application leverages machine learning models to predict your insurance charges, and helps the customer understand how smoking or decreasing your BMI affects
-insurance premiums.
+Como se ha mostrado anteriormente, esta aplicación aprovecha los modelos de AutoAI para predecir los gastos de su seguro y ayuda al usuario a entender la repercusión de fumar o tener un índice de masa corporal (IMC) elevado en el valor de la prima de su seguro.
 
-As we see the value of gross insurance premiums worldwide continue to skyrocket past 5 trillion dollars,
-we know that most of these costs are preventable. For example, just by eliminating smoking, and lowering
-your BMI by a few points could mean shaving thousands of dollars off of your premium charges. In this 
-application, we study the effects of age, smoking, BMI, gender, and region to determine how much of 
-a difference these factors can make on your insurance premium.  By using our 
-application, customers see the radical difference their lifestyle choices make on their insurance 
-charges. By leveraging AI and machine learning, we help customers understand just how much smoking increases their premium, by predicting how much they will have to pay within seconds.
+El valor de las primas de seguros en todo el mundo sigue disparándose por encima de los 5 billones de dólares, aún así se sabe que la mayoría de estos costes son evitables. Por ejemplo, el simple hecho de dejar de fumar y reducir su IMC en unos pocos puntos podría suponer una reducción de miles de dólares en sus primas. En esta aplicación, estudiamos los efectos de la edad, el tabaquismo, el IMC, el sexo y la región para determinar la diferencia que estos factores pueden suponer en el coste de su prima. 
 
-## Description
+Al utilizar nuestra aplicación, los clientes ven la diferencia radical que suponen sus elecciones de estilo de vida en sus  en sus primas de seguro. Aprovechando la IA y el concepto de AutoAI, ayudamos a los clientes a comprender en qué medida el tabaquismo aumenta su prima, prediciendo cuánto tendrán que pagar en cuestión de segundos.
 
-Using IBM AutoAI, you automate all the tasks involved in building predictive models for different requirements. You see how AutoAI generates great models quickly which save time and effort and aid in faster decision-making process. You create a model that from a data set that includes the age, sex, BMI, number-of-children, smoking preferences, region and charges to predict the health insurance premium cost that an individual pays.
 
-When you have completed this code pattern, you understand how to:
+## Descripción
 
-* Setup, quickly, the services on IBM Cloud for building the model.
-* Ingest the data and initiate the AutoAI process.
-* Build different models using AutoAI and evaluate the performance.
-* Choose the best model and complete the deployment.
-* Generate predictions using the deployed model by making REST calls.
-* Compare the process of using AutoAI and building the model manually.
-* Visualize the deployed model using a front-end application.
+Con IBM AutoAI, se automatizan todas las tareas relacionadas con la creación de modelos predictivos. Verá cómo AutoAI genera rápidamente modelos que ahorran tiempo y esfuerzo y ayudan a acelerar el proceso de toma de decisiones en el ciclo de vida de un proyecto de MachineLearning. Usted creará un modelo que a partir de un conjunto de datos que incluyen la edad, el sexo, el IMC, el número de hijos, las preferencias de fumar, la región y el coste de la prima predecirá el coste de la prima del seguro médico que paga un individuo.
 
-### Architecture Components
+Cuando haya completado este tutorial, entenderá cómo:
+
+* Configurar, rápidamente, los servicios en IBM Cloud para construir el modelo.
+* Ingerir los datos e iniciar el proceso de AutoAI.
+* Construir diferentes modelos utilizando AutoAI y evaluar el rendimiento.
+* Elegir el mejor modelo y completar el despliegue.
+* Generar predicciones usando el modelo desplegado haciendo llamadas REST.
+* Comparar el proceso de usar AutoAI y construir el modelo manualmente.
+* Visualizar el modelo desplegado utilizando una aplicación front-end.
+
+
+### Componentes de la arquitectura
 
 ![Architecture Components](https://media.github.ibm.com/user/21063/files/3b77e580-913c-11ea-9dea-425b1d4f4ee0)
 
-## Flow Description
-1. The user creates an IBM Watson Studio Service on IBM Cloud.
-2. The user creates an IBM Cloud Object Storage Service and adds that to Watson Studio.
-3. The user uploads the insurance premium data file into Watson Studio.
-4. The user creates an AutoAI Experiment to predict insurance premium on Watson Studio
-5. AutoAI uses Watson Machine Learning to create several models, and the user deploys the best performing model.
-6. The user uses the Flask web-application to connect to the deployed model and predict an insurance charge.
+## Descripción del flujo
+1. El usuario crea un servicio de IBM Watson Studio en IBM Cloud.
+2. El usuario crea un servicio de almacenamiento de objetos en IBM Cloud y lo añade a Watson Studio.
+3. El usuario carga el archivo de datos de primas de seguros en Watson Studio.
+4. El usuario crea un Experimento AutoAI para predecir la prima del seguro en Watson Studio
+5. AutoAI utiliza Watson Machine Learning para crear varios modelos, y el usuario despliega el modelo de mejor rendimiento.
+6. El usuario utiliza la aplicación web Flask para conectarse al modelo desplegado y predecir el cobro del seguro.
 
-## Included components
-*	[IBM Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio) - IBM Watson® Studio helps data scientists and analysts prepare data and build models at scale across any cloud.
-*	[IBM Watson Machine Learning](https://cloud.ibm.com/catalog/services/machine-learning) - IBM Watson® Machine Learning helps data scientists and developers accelerate AI and machine-learning deployment. 
-*	[IBM Cloud Object Storage](https://cloud.ibm.com/catalog/services/cloud-object-storage) - IBM Cloud™ Object Storage makes it possible to store practically limitless amounts of data, simply and cost effectively.
 
-## Featured technologies
-+ [artificial-intelligence](https://developer.ibm.com/technologies/artificial-intelligence/) - Build and train models, and create apps, with a trusted AI-infused platform.
-+ [Python](https://www.python.org/) - Python is an interpreted, high-level, general-purpose programming language.
-
-## Watch the Video
-
-#### IBM Watson AutoAI Part 1/3: Data exploration and visualization
-
-<a href="https://www.youtube.com/watch?v=9JuiqVXvQ74">
-<img src="https://user-images.githubusercontent.com/10428517/82686741-2c4c6980-9c0b-11ea-896d-b8972aac981a.png" width="725" height="388" /> 
-</a>
-
-#### IBM Watson AutoAI Part 2/3: Running AutoAI
-
-<a href="https://www.youtube.com/watch?v=ilw6O5HwtY0">
-
-<img src="https://user-images.githubusercontent.com/10428517/82686738-2bb3d300-9c0b-11ea-9987-67f40951aa81.png" width="725" height="388" />
-</a>
-
-#### IBM Watson AutoAI Part 3/3: Connecting model API to a web-app
-
-<a href="https://www.youtube.com/watch?v=sOtezE-YNPU">
-
-<img src="https://user-images.githubusercontent.com/10428517/82686732-2787b580-9c0b-11ea-99cb-2986cacead71.png" width="725" height="388" />
-</a>
 
 ## Prerequisites
 
-This Cloud pattern assumes you have an **IBM Cloud** account. Go to the 
-link below to sign up for a no-charge trial account - no credit card required. 
+This Cloud pattern assumes you have an **IBM Cloud** account. Go to the link below to sign up for a no-charge trial account - no credit card required. 
   - [IBM Cloud account](https://ibm.biz/AutoAI-insurance)
   - [Python 3.8.2](https://www.python.org/downloads/release/python-382/)
   
@@ -494,6 +461,28 @@ button to see your predicted charges based on your data.
 
 * Stop working in Silos and share your findings with your team in two clicks.
 ![Cognos-3](https://media.github.ibm.com/user/34798/files/8ab9cf80-8e37-11ea-9554-a85f6ad6186f)
+
+## Watch the Video
+
+#### IBM Watson AutoAI Part 1/3: Data exploration and visualization
+
+<a href="https://www.youtube.com/watch?v=9JuiqVXvQ74">
+<img src="https://user-images.githubusercontent.com/10428517/82686741-2c4c6980-9c0b-11ea-896d-b8972aac981a.png" width="725" height="388" /> 
+</a>
+
+#### IBM Watson AutoAI Part 2/3: Running AutoAI
+
+<a href="https://www.youtube.com/watch?v=ilw6O5HwtY0">
+
+<img src="https://user-images.githubusercontent.com/10428517/82686738-2bb3d300-9c0b-11ea-9987-67f40951aa81.png" width="725" height="388" />
+</a>
+
+#### IBM Watson AutoAI Part 3/3: Connecting model API to a web-app
+
+<a href="https://www.youtube.com/watch?v=sOtezE-YNPU">
+
+<img src="https://user-images.githubusercontent.com/10428517/82686732-2787b580-9c0b-11ea-99cb-2986cacead71.png" width="725" height="388" />
+</a>
 
 ## Related Links
 * [Fraud Prediction Using AutoAI](https://github.com/IBM/predict-fraud-using-auto-ai)
