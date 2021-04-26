@@ -55,16 +55,14 @@ Este patrón de Cloud asume que usted tiene una cuenta de **IBM Cloud**. Vaya al
 2. [Explore los datos](#step-2-explore-the-data-optional)
 3. [Cree los servicio en IBM Cloud](#step-3-create-ibm-cloud-services)
 4. [Cree y ejecute un experimento de AutoAI](#step-4-create-and-run-autoai-experiment)
-5. [Cree una deployment y pruebe su modelo](#step-5-create-a-deployment-and-test-your-model)
+5. [Cree un deployment y pruebe su modelo](#step-5-create-a-deployment-and-test-your-model)
 6. [Cree un notebook desde su modelo](#step-6-create-a-notebook-from-your-model-optional)
 7. [Ejecute la aplicación](#step-7-run-the-application)
 
-## Step 0. Download the data set 
-We will use an insurance data set from Kaggle. You can find it [here](https://www.kaggle.com/noordeen/insurance-premium-prediction).
- Click on the `Download` button, and you should see
-that you will download a file named `insurance-premium-prediction.zip`. Once you unzip the file, you should see `insurance.csv`.
-This is the data set we will use for the remainder of the example. Remember that this example is purely educational, and you
-could use any data set you want - we just happened to choose this one.
+## Paso 0. Descargue el conjunto de datos  
+Utilizaremos un conjunto de datos de seguros de Kaggle. Puedes encontrarlo en (https://www.kaggle.com/noordeen/insurance-premium-prediction). Haga clic en el botón `Download`, y debería ver que descargará un archivo llamado `insurance-premium-prediction.zip`. Una vez descomprimido el archivo, debería ver `insurance.csv`.
+Este es el conjunto de datos que utilizaremos para el resto del ejemplo. Recuerde que este ejemplo es puramente didáctico y que puede utilizar cualquier conjunto de datos que desee. Puede utilizar cualquier conjunto de datos que desee; nosotros simplemente hemos elegido este.
+
 
 ## Step 1. Clone the repo
 Clone this repo onto your computer in the destination of your choice:
