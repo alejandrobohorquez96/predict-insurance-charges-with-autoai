@@ -42,22 +42,22 @@ Cuando haya completado este tutorial, entenderá cómo:
 
 
 
-## Prerequisites
+## Prerequisitos
 
-This Cloud pattern assumes you have an **IBM Cloud** account. Go to the link below to sign up for a no-charge trial account - no credit card required. 
-  - [IBM Cloud account](https://ibm.biz/AutoAI-insurance)
+Este patrón de Cloud asume que usted tiene una cuenta de **IBM Cloud**. Vaya al siguiente enlace para registrarse en una cuenta de prueba sin coste alguno, sin necesidad de tarjeta de crédito. 
+  - [Cuenta IBM Cloud](https://ibm.biz/AutoAI-insurance)
   - [Python 3.8.2](https://www.python.org/downloads/release/python-382/)
   
 
-# Steps
-0. [Download the data set ](#step-0-Download-the-data-set)
-1. [Clone the repo](#step-1-clone-the-repo)
-2. [Explore the data (optional)](#step-2-explore-the-data-optional)
-3. [Create IBM Cloud services](#step-3-create-ibm-cloud-services)
-4. [Create and Run AutoAI experiment](#step-4-create-and-run-autoai-experiment)
-5. [Create a deployment and test your model](#step-5-create-a-deployment-and-test-your-model)
-6. [Create a notebook from your model (optional)](#step-6-create-a-notebook-from-your-model-optional)
-7. [Run the application](#step-7-run-the-application)
+# Pasos
+0. [Descargue el conjunto de datos](#step-0-Download-the-data-set)
+1. [Clone el repositorio de código](#step-1-clone-the-repo)
+2. [Explore los datos](#step-2-explore-the-data-optional)
+3. [Cree los servicio en IBM Cloud](#step-3-create-ibm-cloud-services)
+4. [Cree y ejecute un experimento de AutoAI](#step-4-create-and-run-autoai-experiment)
+5. [Cree una deployment y pruebe su modelo](#step-5-create-a-deployment-and-test-your-model)
+6. [Cree un notebook desde su modelo](#step-6-create-a-notebook-from-your-model-optional)
+7. [Ejecute la aplicación](#step-7-run-the-application)
 
 ## Step 0. Download the data set 
 We will use an insurance data set from Kaggle. You can find it [here](https://www.kaggle.com/noordeen/insurance-premium-prediction).
