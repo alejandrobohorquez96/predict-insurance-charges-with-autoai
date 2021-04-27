@@ -290,8 +290,13 @@ and keep it handy - you will need to paste that into your `app.py` page.
 * Execute the following cURL command to generate your access token, but replace the apikey with the 
 apikey you got from [step 7.1](https://github.com/IBM/predict-insurance-charges-with-autoai#71-get-IBM-Cloud-API-key) above. 
 
+For Linux Mac
 ```
 curl -X POST 'https://iam.cloud.ibm.com/oidc/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=<api-key-goes-here>'
+```
+For Windows (If you are receiving a "Protocol "https" not supportted or disabled in libcurl replace ' ' for " ")
+```
+curl -X POST "https://iam.cloud.ibm.com/oidc/token" -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=<api-key-goes-here>"
 ```
 
 As shown in the image below, the apikey can be copy and pasted from the downloaded file from the end of [step 7.1](https://github.com/IBM/predict-insurance-charges-with-autoai#71-get-IBM-Cloud-API-key). The curl request would look something like this after the apikey is pasted in:
@@ -301,14 +306,6 @@ As shown in the image below, the apikey can be copy and pasted from the download
 ```
 curl -X POST 'https://iam.cloud.ibm.com/oidc/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=aSULp7nFTJl-jGx*******aQXfA6dxMlpuQ9QsOW'
 ```
-
-**Windows users** If you are receiving a "Protocol "https" not supportted or disabled in libcurl replace ' ' for " "
-
-```
-curl -X POST "https://iam.cloud.ibm.com/oidc/token" -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=aSULp7nFTJl-jGx*******aQXfA6dxMlpuQ9QsOW"
-```
-
-If curl is not installed try 6.3 (Windows users only)
 
 
 ### 6.3 (Windows Users only) - Using Windows 10 and Powershell to generate the access token
