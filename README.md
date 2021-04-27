@@ -302,6 +302,15 @@ As shown in the image below, the apikey can be copy and pasted from the download
 curl -X POST 'https://iam.cloud.ibm.com/oidc/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=aSULp7nFTJl-jGx*******aQXfA6dxMlpuQ9QsOW'
 ```
 
+**Windows users** If you are receiving a "Protocol "https" not supportted or disabled in libcurl replace ' ' for " "
+
+```
+curl -X POST "https://iam.cloud.ibm.com/oidc/token" -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=aSULp7nFTJl-jGx*******aQXfA6dxMlpuQ9QsOW"
+```
+
+If curl is not installed try 6.3 (Windows users only)
+
+
 ### 6.3 (Windows Users only) - Using Windows 10 and Powershell to generate the access token
 
 * Install python.org Windows distro 3.8.3 from http://python.org - make sure to add the /python38/scripts folder path to the $PATH environment, if you do not, you will get errors trying to run flask (flask.exe is installed to the scripts folder)
